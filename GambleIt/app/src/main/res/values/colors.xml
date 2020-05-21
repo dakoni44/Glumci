@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="porudzbinaColorTV">#1F8F15</color>
+    <color name="porudzbinaBackground">#91C8F5</color>
+    <color name="registerBackground">#C0DBFA</color>
+</resources>

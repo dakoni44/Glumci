@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GambleIt</string>
+    <string name="creditS">Kredit</string>
+    <string name="rulesS">Pravila</string>
+</resources>

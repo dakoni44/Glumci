@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- Toolbar is a standard toolbar for use within application content. -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Unesite dva broja od 0 do 9, mogu i dva ista broja"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/firstNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Prvi broj" />
+
+        <EditText
+            android:id="@+id/secondNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/firstNumber"
+            android:backgroundTint="@android:color/black"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Drugi broj" />
+
+        <TextView
+            android:id="@+id/firstNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/secondNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/firstNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/thirdNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/secondNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/forthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/thirdNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/fifthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/forthNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/sixthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/fifthNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/seventhNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/sixthNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/eighthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/seventhNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/ninthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/eighthNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/tenthNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@id/ninthNo"
+            android:text="?"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Go"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/drawerPane"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:choiceMode="singleChoice" />
+
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
